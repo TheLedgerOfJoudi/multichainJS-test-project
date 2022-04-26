@@ -1,24 +1,23 @@
 use anchor_lang::prelude::*;
 
-declare_id!("DsCyrbK8krsBS87vVU6uZS7L9J2kMuioim4eVvZcz2fV");
+declare_id!("EatSACs9Sn2mn9Zrzkhy3ogN92zJXh1u5tqxiu8K7svY");
 
 #[program]
 pub mod solana_devnet_contract {
     use super::*;
 
-    pub fn create_joke(ctx: Context<CreateJokeCtx>, joke_content: String) -> Result<()> {
-        let joke: &mut Account<Joke> = &mut ctx.accounts.joke_account;
-        joke.author = *ctx.accounts.authority.key;
-        joke.content = joke_content;
+    pub fn store(ctx: Context<StoreCtx>, number: i32) -> Result<()> {
+        let num: &mut Account<Number> = &mut ctx.accounts.number_account;
+        num.content = number;
         Ok(())
     }
 }
 
 #[derive(Accounts)]
-pub struct CreateJokeCtx<'info> {
+pub struct StoreCtx<'info> {
     // properly set the space later
-    #[account(init, payer = authority, space = 2000)]
-    pub joke_account: Account<'info, Joke>,
+    #[account(init, payer = authority, space = 32)]
+    pub number_account: Account<'info, Number>,
 
     #[account(mut)]
     pub authority: Signer<'info>,
@@ -28,7 +27,6 @@ pub struct CreateJokeCtx<'info> {
 }
 
 #[account]
-pub struct Joke {
-    pub author: Pubkey,
-    pub content: String,
+pub struct Number {
+    pub content: i32,
 }

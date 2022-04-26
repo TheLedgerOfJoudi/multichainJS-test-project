@@ -1,7 +1,7 @@
 [features]
 seeds = false
 [programs.localnet]
-solana_devnet_contract = "DsCyrbK8krsBS87vVU6uZS7L9J2kMuioim4eVvZcz2fV"
+solana_devnet_contract = "EatSACs9Sn2mn9Zrzkhy3ogN92zJXh1u5tqxiu8K7svY"
 
 [registry]
 url = "https://anchor.projectserum.com"
