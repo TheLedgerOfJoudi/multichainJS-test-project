@@ -1,0 +1,40 @@
+{
+  "_format": "hh-sol-cache-2",
+  "files": {
+    "/home/hadi/Desktop/Dev/QuestBook/multichainJS-test-project/rinkeby-contract/contracts/Storage.sol": {
+      "lastModificationDate": 1650356127927,
+      "contentHash": "55117ec6e6397b692d3cbc5ef9afce0f",
+      "sourceName": "contracts/Storage.sol",
+      "solcConfig": {
+        "version": "0.7.0",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.7.0 <0.9.0"
+      ],
+      "artifacts": [
+        "Storage"
+      ]
+    }
+  }
+}

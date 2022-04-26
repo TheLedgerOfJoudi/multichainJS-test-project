@@ -1,0 +1,35 @@
+{
+  "_format": "hh-sol-artifact-1",
+  "contractName": "Storage",
+  "sourceName": "contracts/Storage.sol",
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "num",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "payable",
+      "type": "constructor"
+    },
+    {
+      "inputs": [],
+      "name": "number",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "bytecode": "0x60806040526040516100b93803806100b983398181016040526020811015602557600080fd5b50516000556081806100386000396000f3fe6080604052348015600f57600080fd5b506004361060285760003560e01c80638381f58a14602d575b600080fd5b60336045565b60408051918252519081900360200190f35b6000548156fea26469706673582212207f202a1370b9f637a2b1f13e91ec8f9708a3893dfd1f4fcc1817b70036fe90da64736f6c63430007000033",
+  "deployedBytecode": "0x6080604052348015600f57600080fd5b506004361060285760003560e01c80638381f58a14602d575b600080fd5b60336045565b60408051918252519081900360200190f35b6000548156fea26469706673582212207f202a1370b9f637a2b1f13e91ec8f9708a3893dfd1f4fcc1817b70036fe90da64736f6c63430007000033",
+  "linkReferences": {},
+  "deployedLinkReferences": {}
+}
