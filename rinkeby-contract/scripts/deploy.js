@@ -2,7 +2,7 @@ const {ethers} = require('hardhat')
 
 async function main() {
     const Storage = await ethers.getContractFactory('Storage');
-    const storage = await Storage.deploy(1);
+    const storage = await Storage.deploy();
     console.log("Deployed to " + storage.address);
 }
 
@@ -13,4 +13,4 @@ main()
         process.exit(1);
     });
 
-    //0xFCb1aD772ec4CB6d8351dd417008984f9C16E18b
+    //0xC135B9F4976de1FB0f3f8f9EE28F3Ae1B7Bc60D8
